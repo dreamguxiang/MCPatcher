@@ -12,23 +12,22 @@ constexpr unsigned int FAIL_CANNOT_FIND_BYTE = (0x1003);
 constexpr unsigned int FAIL_CURRENT_PLATFORM_NO_PATCH = (0x1004);
 constexpr unsigned int FAIL_BACKUP = (0x1005);
 
-#define VERSION "1.2.0"
+#define VERSION "1.3.0"
 
 int main(int argc, char *argv[]) {
 
     // Welcome message.
 
     spdlog::set_pattern("[%H:%M:%S.%e] [%^%l%$] %v");
-    spdlog::info("MCPatcher v{}, Repository: github.com/Redbeanw44602/MCPatcher [MIT]", VERSION);
+    spdlog::info("MCPatcher v{}, Repository: github.com/dreamguxiang/MCPatcher Original Author:Redbeanw44602 [MIT]", VERSION);
 
     // Add known patch(es);
 
     MCPatcher patcher;
 
     auto generalPatch = MCPatcher::compile(
-            "48 8B 42 08 48 8B 88 80 01 00 00 48 85 C9 74 07 E8 ?? ?? ?? 00 "
+            "48 8B 42 08 48 8B 88 ?? ?? ?? ?? 48 85 C9 74 07 E8 ?? ?? ?? 00 "
             "EB 04 0F B6 42 10 84 C0 74 ?? B0 01(00) 48 8B 4C 24 ?? 48 33 CC");
-
     patcher.registerPatch(Platform::Win10, "General_Patch_V2", generalPatch);
 
     // Ask for binary file;

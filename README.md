@@ -4,7 +4,7 @@ A patcher, contains some patches for minecraft.
 
 ### Usage
 
- - Download the compiled version from [release](https://github.com/Redbeanw44602/MCPatcher/releases) or compile it yourself.
+ - Download the compiled version from [release](https://github.com/dreamguxiang/MCPatcher/releases) or compile it yourself.
  - Get your minecraft program and make sure it can **read and write**.
  - Using the command, the second argument is the path to the binary file.
 ```
@@ -18,6 +18,6 @@ MCPatcher.exe
 ### Platform: Windows
 
 > Binary: *Minecraft.Windows.exe*  
-> As of 23/05/18, it is effective in all recent versions (release-1.19, preview-1.20), and theoretically supports all versions.
+> As of 23/05/18, it is effective in all recent versions (release-1.20.30, preview-1.20.40), and theoretically supports all versions.
  - No Trial
  - No Chat Report (wip)
